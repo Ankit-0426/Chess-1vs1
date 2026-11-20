@@ -2,16 +2,13 @@ import os
 import time
 import chess
 
-
 def clear_screen():
     os.system("cls" if os.name == "nt" else "clear")
-
 
 def format_time(seconds):
     seconds = max(0, int(seconds))
     minutes, secs = divmod(seconds, 60)
     return f"{minutes:02d}:{secs:02d}"
-
 
 def main():
     board = chess.Board()
@@ -111,7 +108,6 @@ def main():
 
         reason = outcome.termination.name.replace("_", " ").title()
         print(f"Game Over — {winner} ({reason})")
-
 
 if __name__ == "__main__":
     main()
