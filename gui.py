@@ -1,4 +1,3 @@
-
 """
 Graphical grid logic and image loading adapted from Eddie Sharick's YouTube tutorial: ["https://youtu.be/EnYui0e73Rs"]
 and 
